@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE - Şarkı Ekle</title>
+    <link rel="stylesheet" href="PULSE.css">
+</head>
+<body>
+    <!-- Ortak Menü -->
+    <header>
+        <h1>PULSE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="kesfet.html">Müzik Keşfet</a></li>
+                <!-- Vurgu doğru yerde -->
+                <li><a href="ekle.html">Şarkı Ekle</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana İçerik -->
+    <main>
+        <section class="hero">
+            <h2>PULSE Topluluğuna Şarkı Ekle</h2>
+            <p>Yeni keşfettiğin müzikleri diğer kullanıcılarla paylaş.</p>
+        </section>
+
+        <!-- Form Bölümü -->
+        <section class="features">
+            <form action="#">
+                <p>Şarkı Adı</p>
+                <input type="text" placeholder="Örn: Blinding Lights">
+
+                <p>Sanatçı</p>
+                <input type="text" placeholder="Örn: The Weeknd">
+
+                <p>Çıkış Tarihi</p>
+                <input type="date">
+
+                <p>Tür: 
+                    <input type="radio" name="tur" value="yerli"> Yerli 
+                    <input type="radio" name="tur" value="yabanci"> Yabancı
+                </p>
+
+                <p>Kategori</p>
+                <select name="kategori">
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="rap">Rap</option>
+                    <option value="elektronik">Elektronik</option>
+                </select>
+
+                <br>
+                <p><input type="checkbox" name="favori"> Bu şarkıyı favorilerime de ekle</p>
+                <br>
+                
+                <hr style="margin: 20px 0; border: 1px solid #ddd;">
+                <h3 style="color: #030202; margin-bottom: 5px;">PULSE Topluluk Analizi</h3>
+                <p style="margin-bottom: 15px; font-size: 0.9em; color: #666;">Bu bölüm, şarkının topluluk içindeki algısını ölçmek içindir.</p>
+
+                <p><strong>Bu Şarkı Sana Nasıl Hissettiriyor?</strong></p>
+                <div class="anket-grubu">
+                    <input type="checkbox" name="his" value="mutlu"> Enerjik / Mutlu<br>
+                    <input type="checkbox" name="his" value="uzgun"> Melankolik / Üzgün<br>
+                    <input type="checkbox" name="his" value="sakin"> Sakinleştirici / Rahat<br>
+                    <input type="checkbox" name="his" value="gaza_getiren"> Motive Edici / Gaza Getiren<br>
+                    <input type="checkbox" name="his" value="nostaljik"> Nostaljik<br>
+                </div>
+                <br>
+
+                <p><strong>Bu Şarkıyı En Çok Nerede Dinlersin?</strong></p>
+                <div class="anket-grubu">
+                    <input type="radio" name="ortam" value="spor"> Sporda / Antrenmanda<br>
+                    <input type="radio" name="ortam" value="yolculuk"> Yolculukta / Arabada<br>
+                    <input type="radio" name="ortam" value="gece"> Gece Yalnızken (Overthink)<br>
+                    <input type="radio" name="ortam" value="parti"> Arkadaşlarla / Partide<br>
+                    <input type="radio" name="ortam" value="calisirken"> Ders Çalışırken / Odaklanırken<br>
+                </div>
+                <br>
+
+                <p><strong>Şarkıya Puanın:</strong></p>
+                <select name="puan">
+                    <option value="5">⭐⭐⭐⭐⭐ Başyapıt</option>
+                    <option value="4">⭐⭐⭐⭐ Çok İyi</option>
+                    <option value="3">⭐⭐⭐ Ortalama</option>
+                    <option value="2">⭐⭐ İdare Eder</option>
+                    <option value="1">⭐ Kötü</option>
+                </select>
+                <br><br>
+
+                <p><strong>Şarkı Hakkında Ekstra Düşüncelerin</strong></p>
+                <textarea rows="4" placeholder="Şarkının en sevdiğin sözü veya sana ne hatırlattığı..."></textarea>
+                
+                <br><br>
+                <button type="button">PULSE'a Gönder</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PULSE - Furkan Şentürk. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

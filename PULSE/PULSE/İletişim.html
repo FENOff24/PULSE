@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE - İletişim</title>
+    <link rel="stylesheet" href="PULSE.css">
+</head>
+<body>
+    <!-- Ortak Menü -->
+    <header>
+        <h1>PULSE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="kesfet.html">Müzik Keşfet</a></li>
+                <li><a href="ekle.html">Şarkı Ekle</a></li>
+                <!-- Vurgu artık İletişim sayfasında -->
+                <li><a href="iletisim.html" class="aktif">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana İçerik -->
+    <main>
+        <section class="hero">
+            <h2>Bizimle İletişime Geç</h2>
+            <p>PULSE hakkında önerilerin mi var? Ekibimize hemen ulaş.</p>
+        </section>
+
+        <!-- İletişim Formu (CSS'teki form tasarımı buraya otomatik uygulanacak) -->
+        <section class="features">
+            <form action="#">
+                <p>Adın Soyadın</p>
+                <input type="text" placeholder="Örn: Furkan Şentürk">
+
+                <p>E-Posta Adresin</p>
+                <input type="text" placeholder="Örn: furkan@pulse.com">
+
+                <p>Konu</p>
+                <select name="konu">
+                    <option value="oneri">Öneri & Geri Bildirim</option>
+                    <option value="hata">Hata Bildirimi</option>
+                    <option value="isbirligi">İş Birliği</option>
+                </select>
+
+                <p>Mesajın</p>
+                <textarea rows="5" placeholder="Bize ne söylemek istersin?"></textarea>
+                
+                <br><br>
+                <button type="button">Mesajı Gönder</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PULSE - Furkan Şentürk. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
